@@ -13,24 +13,37 @@
 
 <body>
     <div class="container">
-        <div class="sidebar">
+        <nav class="sidebar">
             <div class="sidebar__content dashboard">
-
+                Dashboard
             </div>
-            <div class="sidebar__content menu"></div>
-            <div class="sidebar__content settings"></div>
-        </div>
-        <main>
-            <div class="searchbar"></div>
-            <navbar class="profile"></navbar>
-            <div class="content">
+            <div class="sidebar__content menu">
+                <div class="sidebar__content">Home</div>
+                <div class="sidebar__content">Profile</div>
+                <div class="sidebar__content">Messages</div>
+                <div class="sidebar__content">History</div>
+                <div class="sidebar__content">Tasks</div>
+                <div class="sidebar__content">Communities</div>
+            </div>
+            <div class="sidebar__content settings">
+                <div class="sidebar__content">Settings</div>
+                <div class="sidebar__content">Support</div>
+                <div class="sidebar__content">Privacy</div>
+            </div>
+        </nav>
+        
+            <header class="header">
+                <div class="searchbar"></div>
+                <div class="profile"></div>
+            </header>
+            <main class="content">
                 <div class="content__main"></div>
                 <div class="content__side">
                     <div class="pengumuman"></div>
                     <div class="trending"></div>
                 </div>
-            </div>
-        </main>
+            </main>
+       
     </div>
     <script src="App.js"></script>
 </body>

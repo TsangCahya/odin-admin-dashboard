@@ -1,26 +1,75 @@
 :root{
-    /* reset */
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  
 
     /* color */
-     --text: #0a0217;
-    --background: #f5f1fe;
-    --primary: #681deb;
-    --secondary: #da84f4;
-    --accent: #dd47ef;
+     --text: #0f172a;
+    --background: #f8fafc;
+     --primary: #4f46e5; /* indigo 600 */
+    --secondary: #f1f5f9;
+    --accent: #4338ca;
 
 
 }
 
-
+*{
+      /* reset */
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
 body{
     font-family: 'Poppins', sans-serif;
     background-color: var(--background);
+    color: var(--text);
 }
 
 .container{
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+/* SIDEBAR */
+.sidebar{
+    height: 100%;
+    grid-column: 1/span 1;
+    grid-row: 1/span 2;
+    background-color: var(--primary);
+    color: var(--background);
+    display: grid;
+    align-content: start;
+    justify-content: center;
+    grid-gap: 2rem;
+}
+.dashboard{
+    margin-top: 2rem;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.settings{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* END SIDEBAR */
+
+/* HEADER */
+
+.header{
+  grid-area: 1 span 1/2 span 1;  
+  background-color: var(--background);
+}
+
+/* END HEADER */
+
+/* MAIN CONTENT */
+.content{
+    grid-area: 2 span 1/2 span 1;
+    background-color: var(--secondary);
 }
