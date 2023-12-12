@@ -1,0 +1,26 @@
+:root{
+    /* reset */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* color */
+     --text: #0a0217;
+    --background: #f5f1fe;
+    --primary: #681deb;
+    --secondary: #da84f4;
+    --accent: #dd47ef;
+
+
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
